@@ -1,0 +1,400 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A897A5FE-F721-48F2-B094-BA20449B91C6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Capa.UI</RootNamespace>
+    <AssemblyName>Capa.UI</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MessagingToolkit.QRCode, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MessagingToolkit.QRCode.1.3.0\lib\MessagingToolkit.QRCode.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAcercade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAcercade.Designer.cs">
+      <DependentUpon>frmAcercade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\FrmCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\FrmCategoria.Designer.cs">
+      <DependentUpon>FrmCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\FrmCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\FrmCliente.Designer.cs">
+      <DependentUpon>FrmCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmIngreso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIngreso.Designer.cs">
+      <DependentUpon>frmIngreso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipal.Designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\FrmMaterial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\FrmMaterial.Designer.cs">
+      <DependentUpon>FrmMaterial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\FrmProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\FrmProducto.Designer.cs">
+      <DependentUpon>FrmProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\FrmProvedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\FrmProvedor.Designer.cs">
+      <DependentUpon>FrmProvedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\FrmUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\FrmUsuario.Designer.cs">
+      <DependentUpon>FrmUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Procesos\frmFacturar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Procesos\frmFacturar.Designer.cs">
+      <DependentUpon>frmFacturar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reportes\DataSetFloristeria.cs">
+      <DependentUpon>DataSetFloristeria.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\DataSetFloristeria.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetFloristeria.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmReporteFacturacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmReporteFacturacion.Designer.cs">
+      <DependentUpon>frmReporteFacturacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Util\QuickResponse.cs" />
+    <EmbeddedResource Include="frmAcercade.resx">
+      <DependentUpon>frmAcercade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\FrmCategoria.resx">
+      <DependentUpon>FrmCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\FrmCliente.resx">
+      <DependentUpon>FrmCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIngreso.resx">
+      <DependentUpon>frmIngreso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\FrmMaterial.resx">
+      <DependentUpon>FrmMaterial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\FrmProducto.resx">
+      <DependentUpon>FrmProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\FrmProvedor.resx">
+      <DependentUpon>FrmProvedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\FrmUsuario.resx">
+      <DependentUpon>FrmUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Procesos\frmFacturar.resx">
+      <DependentUpon>frmFacturar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Reportes\frmReporteFacturacion.resx">
+      <DependentUpon>frmReporteFacturacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\rptFacturacion.rdlc" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Reportes\DataSetFloristeria.xsc">
+      <DependentUpon>DataSetFloristeria.xsd</DependentUpon>
+    </None>
+    <None Include="Reportes\DataSetFloristeria.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetFloristeria.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reportes\DataSetFloristeria.xss">
+      <DependentUpon>DataSetFloristeria.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Capa.Entidades\Capa.Entidades.csproj">
+      <Project>{bbc125ac-69a6-4f57-8ec0-4650ac4a63ed}</Project>
+      <Name>Capa.Entidades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Capa.Logica\Capa.Logica.csproj">
+      <Project>{d6e10cb9-4ef6-440d-9d85-bc81dd75c5bb}</Project>
+      <Name>Capa.Logica</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Imagenes\aceptar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\carrera.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\configuracion.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\eliminar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\modificar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\salir.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\salir1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\usuario.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\usuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\usuario1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\usuario2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\usuario3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\usuario4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\usuario5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\User.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Access alt 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Adobe Acrobat Reader.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Android Smartphone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\appointment-new-2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Bookmarks alt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Configure alt 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Configure.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Default-Person.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Entourage alt 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Facebook alt 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Facebook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Finder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\finished-work.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Full Screen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\logo1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\logo11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Notepad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Notifications.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Personal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\pie_chart1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Pin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Pin1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Power - Hibernate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Power - Restart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Power - Shut Down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Power - Standby.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Recycle Bin Empty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Recycle Bin Full.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Screen Resolution.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Security Approved.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Share alt 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Task Manager alt 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Twitter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\User With Frame.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Windows 8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Windows 8_1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Word alt 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Xbox 360.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Imagenes\Transparente.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
